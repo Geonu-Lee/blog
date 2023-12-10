@@ -1,6 +1,6 @@
 ---
 title: Github 블로그 initial
-date: YYYY-MM-DD HH:MM:SS +09:00
+date: 2023-12-10 23:15:00 +09:00
 categories: [Test, Initial]
 tags:
    [
