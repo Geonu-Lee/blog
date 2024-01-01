@@ -1,6 +1,6 @@
 ---
 title: "AdaMixer: A Fast-Converging Query-Based Object Detector"
-date: 2024-01-01 23:00:00 +09:00
+date: 2024-01-01 22:55:00 +09:00
 categories: [Paper Reading]
 tags:
    [
