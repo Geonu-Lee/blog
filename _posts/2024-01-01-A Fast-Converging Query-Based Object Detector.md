@@ -7,6 +7,7 @@ tags:
     Object Detection,
     DETR
    ]
+use_math: true
 ---   
 # AdaMixer: A Fast-Converging Query-Based Object Detector
 [CVPR 2022](https://alcherainc.atlassian.net/jira/software/c/projects/MLR/boards/158?selectedIssue=MLR-306)
@@ -28,7 +29,7 @@ tags:
 ## Proposed Method
 ### Object Query Definition
 semantic 정보를 담고 있는 query와 positional view 정보를 담고 있는 query를 사용
-- content vector $\bold q$
+- content vector $\boldsymbol{\text{q}}$
 - positional vector $(x, y, z, r)$
   - $x, y$ 는 center point
   - $z, r$ 은 scale 과 aspect ratio
@@ -50,7 +51,7 @@ $(x, y, z, r)$ 과 $s_{base}$를 기반으로 원래 scale 이미지에 대한 b
 서로 다른 stride에 따른 각 scale feature map 에 따른 $z^{feat}_j$ 를 계산
 
 #### Adaptive 3D feature sampling process
-content query vector $\bold q$ 로 부터 offset vectors를 얻어낸다.
+content query vector $\boldsymbol{\text{q}}$ 로 부터 offset vectors를 얻어낸다.
 ![Alt text](/assets/paper_imgs/adamixer/eq4.PNG)
 
 $P_{in}$ 개수 만큼 얻어낸다. 본 논문에서는 32를 사용한다.
@@ -67,7 +68,7 @@ $P_{in}$ 개수 만큼 얻어낸다. 본 논문에서는 32를 사용한다.
 
 앞서 (3) 번식으로 구한 $z^{feat}_j$ 을 기반으로 gaussian weighting
 
-이를 통해서 최종적으로 samplied feature matrix $\bold x$ 를 얻어낸다. 크기는 $\R^{P_{in}\times d_{feat}}$ 이다.
+이를 통해서 최종적으로 samplied feature matrix $\boldsymbol{\text{x}}$ 를 얻어낸다. 크기는 $\mathbb{R}^{P_{in}\times d_{feat}}$ 이다.
 
 ### Adaptive Content Decoding
 > With features sampled, *how to adaptively decode them* is another key design in our AdaMixer decoder.
@@ -75,7 +76,7 @@ $P_{in}$ 개수 만큼 얻어낸다. 본 논문에서는 32를 사용한다.
 #### Adaptive channel mixing
 Adaptive Channel Mixing (ACM) 구조를 제안
 
-content query $\bold q$ 를 통해서 channel sematics 를 adaptively enhance 하기 위해서
+content query $\boldsymbol{\text{q}}$ 를 통해서 channel sematics 를 adaptively enhance 하기 위해서
 
 ![Alt text](/assets/paper_imgs/adamixer/eq7_8.PNG)
 
@@ -90,7 +91,7 @@ $P_{out}$ 은 spatial mixing out patters 수
 #### Overall AdaMixer Detector
 ![Alt text](/assets/paper_imgs/adamixer/fig4.PNG)
 
-FFN을 통해서 새로운 content query vector $\bold q$ 를 얻어내고 또 다른 FFN 을 통해서 positional query vector 업데이트한다.
+FFN을 통해서 새로운 content query vector $\boldsymbol{\text{q}}$ 를 얻어내고 또 다른 FFN 을 통해서 positional query vector 업데이트한다.
 
 ![Alt text](/assets/paper_imgs/adamixer/eq_11_12.PNG)
 
