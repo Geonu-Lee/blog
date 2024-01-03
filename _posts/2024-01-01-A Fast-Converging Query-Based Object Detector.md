@@ -10,7 +10,7 @@ tags:
 use_math: true
 ---   
 # AdaMixer: A Fast-Converging Query-Based Object Detector
-[CVPR 2022](https://alcherainc.atlassian.net/jira/software/c/projects/MLR/boards/158?selectedIssue=MLR-306)
+[CVPR 2022](https://openaccess.thecvf.com/content/CVPR2022/html/Gao_AdaMixer_A_Fast-Converging_Query-Based_Object_Detector_CVPR_2022_paper.html)
 , 2024-01-01 기준 70회 인용
 
 ## Task
