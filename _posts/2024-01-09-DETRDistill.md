@@ -26,7 +26,7 @@ use_math: true
 - Query-prior assignment distillation
 
 <!-- ![Alt text](/assets/paper_imgs/detrdistill/fig1.png) -->
-<img src="./detrdistill/fig1.png" height="300px">
+<!-- <img src="./detrdistill/fig1.png" height="300px"> -->
 
 Teacher: ResNet-101</br>
 Student: ResNet-50</br>
@@ -47,6 +47,6 @@ Student: ResNet-50</br>
 
 
 ## Experimental Results
-<img src="./detrdistill/detrdistill/tab3.png" height="300px">
+<!-- <img src="./detrdistill/detrdistill/tab3.png" height="300px"> -->
 
-<img src="./detrdistill/tab4.png" height="300px">
+<!-- <img src="./detrdistill/tab4.png" height="300px"> -->
