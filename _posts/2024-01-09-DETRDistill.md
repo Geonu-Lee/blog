@@ -26,7 +26,7 @@ use_math: true
 - Query-prior assignment distillation
 
 <!-- ![Alt text](/assets/paper_imgs/detrdistill/fig1.png) -->
-<img src="/images/detrdistill/fig1.png" height="300px" alt="fig1">
+<img src="/images/detrdistill/fig1.png" height="200px" alt="fig1">
 
 Teacher: ResNet-101</br>
 Student: ResNet-50</br>
