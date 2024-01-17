@@ -10,6 +10,7 @@ tags:
 use_math: true
 ---   
 # Towards Data-Efficient Detection Transformers
+[ECCV 2022](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136690090.pdf), 2024-01-17 기준 43회 인용
 
 ## Task
 - Object Detection
