@@ -53,6 +53,7 @@ $(x, y, z, r)$ 과 $s_{base}$를 기반으로 원래 scale 이미지에 대한 b
 
 #### Adaptive 3D feature sampling process
 content query vector $\boldsymbol{\text{q}}$ 로 부터 offset vectors를 얻어낸다.
+
 ![Alt text](/assets/paper_imgs/adamixer/eq4.PNG)
 
 $P_{in}$ 개수 만큼 얻어낸다. 본 논문에서는 32를 사용한다.
