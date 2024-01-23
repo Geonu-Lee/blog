@@ -18,7 +18,7 @@ use_math: true
 - DETR
 
 ## Contribution
-- 기존 DETR의 one-to-one matching 방법들은 모델에게 string fine-grained discrimination 을 요구하게 된다
+- 기존 DETR의 one-to-one matching 방법들은 모델에게 strong fine-grained discrimination 을 요구하게 된다
 - Cross-stage interaction 구조를 제안
 - Reuse dynamic operators with lightweights adapters (Adamixer)
 
