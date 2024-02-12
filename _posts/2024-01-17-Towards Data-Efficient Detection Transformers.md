@@ -30,9 +30,9 @@ DETR 계열의 Detector 들은 small-size dataset 에서 성능이 크게 떨어
 
 ![Alt text](/images/data_efficient_detr/tab1.png)
 
-Sparse-RCNN 에서 각 모듈들을 빼고 추가하면서 DETR 로 transition </br>
-그 과정에서 각각의 모듈이 성능에 미치는 정도를 분석 </br>
-결론적으로는 DETR 을 위한 모듈들이 data hungry 이다 </br>
+Sparse-RCNN 에서 각 모듈들을 빼고 추가하면서 DETR 로 transition <br>
+그 과정에서 각각의 모듈이 성능에 미치는 정도를 분석 <br>
+결론적으로는 DETR 을 위한 모듈들이 data hungry 이다 <br>
 그리고 RoIAlign 같은 것으로 sparse feature sampling 하는 것이 크게 도움을 준다
 
 ## Proposed Method
@@ -43,17 +43,17 @@ Sparse-RCNN 에서 각 모듈들을 빼고 추가하면서 DETR 로 transition <
 
 ![Alt text](/images/data_efficient_detr/eq3.png)
 
-그 전 decoder layer 에서 prediction 된 box 정보를 활용해서 RoIAlign </br>
-2번째 decoder layer에서만 진행 </br>
+그 전 decoder layer 에서 prediction 된 box 정보를 활용해서 RoIAlign <br>
+2번째 decoder layer에서만 진행 <br>
 $\boldsymbol{\text{z}}^L_l \in \mathbb{R}^{N \times K^2 \times D}$
 
 ![Alt text](/images/data_efficient_detr/eq4.png)
 
-backbone feature 로부터 high-resolution feature 를 사용 </br>
+backbone feature 로부터 high-resolution feature 를 사용 <br>
 down-sampled feature 3 levels 사용
 
-3 levels 에 대해서는 backbone 으로부터 온 feature 에서 RoIAlign </br>
-low-resolution feature 는 encoder 로 부터 온 feature 에서 RoIAlign </br>
+3 levels 에 대해서는 backbone 으로부터 온 feature 에서 RoIAlign <br>
+low-resolution feature 는 encoder 로 부터 온 feature 에서 RoIAlign <br>
 그리고 이 모든 것들을 concat
 
 $\boldsymbol{\text{z}}^{ms}_l \in \mathbb{R}^{N \times LK^2 \times D}$

@@ -31,8 +31,8 @@ use_math: true
 
 > This strict bipartite matching would ask the detector to capture details to distinguish the predictions
 
-Figure 2(a) 에서 Stage1 의 white box는 GT와 할당되어 Positive로 정확하게 예측 </br>
-하지만 red box 는 GT와 많이 겹침에도 불구하고 GT와 할당되지 않아 negative로 예측 </br>
+Figure 2(a) 에서 Stage1 의 white box는 GT와 할당되어 Positive로 정확하게 예측 <br>
+하지만 red box 는 GT와 많이 겹침에도 불구하고 GT와 할당되지 않아 negative로 예측 <br>
 Stage 6 에서는 반대가 되는 문제도 보여준다
 
 본 논문에서 제안하고자 하는 것은 이런 문제를 해결하여 두 query에 대한 결과가 모두 정확하게 하는 것
@@ -43,13 +43,13 @@ Stage 6 에서는 반대가 되는 문제도 보여준다
 ### Cross-stage Label Assignment
 <img src="/images/stageinteractor/fig5.png" width="450px" alt="alt">
 
-stage $i$ 에서 다른 stage $j$ 결과를 활용 </br>
+stage $i$ 에서 다른 stage $j$ 결과를 활용 <br>
 논문에서는 $i-1$ 부터 $L$ stage 까지를 사용
 
-다른 stage $j$ 에서 GT와 매칭된 query index를 활용 </br>
-query index에 대한 stage $i$ 에서의 Query의 prediction 결과와 GT와의 IoU 값이 threshold 를 넘을 경우 진행 </br>
-해당 GT 를 Candidate Bags에 넣어준다 </br>
-그리고 one-hot vectors 로 stage $i$ classification logits 와 BCE Loss </br>
+다른 stage $j$ 에서 GT와 매칭된 query index를 활용 <br>
+query index에 대한 stage $i$ 에서의 Query의 prediction 결과와 GT와의 IoU 값이 threshold 를 넘을 경우 진행 <br>
+해당 GT 를 Candidate Bags에 넣어준다 <br>
+그리고 one-hot vectors 로 stage $i$ classification logits 와 BCE Loss <br>
 이를 통해서 Figure 2와 같은 문제를 해결하려고 한다
 
 
@@ -62,9 +62,9 @@ query index에 대한 stage $i$ 에서의 Query의 prediction 결과와 GT와의
 
 AdaMixer 정리해둔 내용 캡처
 
-Adpative channel mixing 을 위해서 content query 를 활용하여 weights를 생성</br>
+Adpative channel mixing 을 위해서 content query 를 활용하여 weights를 생성<br>
 
-$i$ stage 에서 $d$ 번째 content vector 에 대한 weights </br>
+$i$ stage 에서 $d$ 번째 content vector 에 대한 weights <br>
 $W^{(i)}_d \in \mathbb{R}^{D_C \times D_C}$
 
 이 과정에서 파라미터가 $D \times {D_C}^2$ 만큼 필요하다

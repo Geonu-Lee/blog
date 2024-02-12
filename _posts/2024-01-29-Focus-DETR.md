@@ -43,21 +43,21 @@ tokens 을 sparse 하게 가져가는 Sparse DETR
 
 ### Scoring mechanism
 
-Multi-scale features를 활용 </br>
+Multi-scale features를 활용 <br>
 여러 scale 의 tokens 들을 겹쳐서 구성
 
->overlap of the adjacent interval by 50% </br>
+>overlap of the adjacent interval by 50% <br>
 >ensuring that the multiscale feature map predicts object heterogeneity
 
 <img src="/images/focus_detr/eq1.png" width="500px" alt="alt">
 
-GT box 를 활용해서 label assignment </br>
-GT box 안에 있거나, 해당 token이 구성된 scale range 안에 드는 경우 (인접한 scale 끼리 구성했기 때문에?) </br>
+GT box 를 활용해서 label assignment <br>
+GT box 안에 있거나, 해당 token이 구성된 scale range 안에 드는 경우 (인접한 scale 끼리 구성했기 때문에?) <br>
 Figure 3 과 같이 각 level 에 대해서 supervision
 
 <img src="/images/focus_detr/fig5.png" width="500px" alt="alt">
 
-Top-down 방식으로 진행 </br>
+Top-down 방식으로 진행 <br>
 High-level -> Low-level
 
 >Considering that high-level feature maps contain richer semantic than low-level features
