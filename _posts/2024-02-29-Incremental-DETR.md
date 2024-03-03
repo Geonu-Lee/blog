@@ -30,7 +30,7 @@ use_math: true
 
 ### Base Model Training
 
-<img src="/images/incremental-detr/fig1.png" width="650px" alt="alt">
+<!-- <img src="/images/incremental-detr/fig1.png" width="650px" alt="alt"> -->
 
 #### Base Model Pre-training
 
@@ -60,7 +60,7 @@ Selective Search 에 의해서 proposal 된 box 에 대해서 학습
 
 ### Incremental Few-shot Fine-Tuning
 
-<img src="/images/incremental-detr/fig2.png" width="650px" alt="alt">
+<!-- <img src="/images/incremental-detr/fig2.png" width="650px" alt="alt"> -->
 
 Base class 에 대해서 학습된 weights 를 initialize 로 사용 <br>
 Projection Layer 와 Classification Head 만 학습 <br>
@@ -81,7 +81,7 @@ novel class 에 대한 DETR 학습 + Feautre distillation loss + Logit distillat
 
 ## Experimental Results
 
-<img src="/images/incremental-detr/tab1.png" width="650px" alt="alt">
+<!-- <img src="/images/incremental-detr/tab1.png" width="650px" alt="alt"> -->
 
 "1-41" : base class <br>
 "41" : novel class <br>
@@ -99,6 +99,6 @@ novel class 에 대한 DETR 학습 + Feautre distillation loss + Logit distillat
 "(1-40) + (41-80)" : "1-40" 를 base class, "41-80" 을 novel class로 제안하는 방법을 학습
 
 
-<img src="/images/incremental-detr/tab2.png" width="650px" alt="alt">
+<!-- <img src="/images/incremental-detr/tab2.png" width="650px" alt="alt"> -->
 
 class 마다의 이미지 샘플 수에 따른 Incremental few-shot object detection 실험 결과
