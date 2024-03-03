@@ -1,6 +1,6 @@
 ---
 title: "Incremental-DETR: Incremental Few-Shot Object Detection via Self-Supervised Learning"
-date: 2024-03-04 23:00:00 +09:00
+date: 2024-02-29 23:00:00 +09:00
 categories: [Paper Reading]
 tags:
    [
@@ -30,58 +30,58 @@ use_math: true
 
 ### Base Model Training
 
-<!-- <img src="/images/incremental-detr/fig1.png" width="650px" alt="alt"> -->
+<img src="/images/incremental-DETR/fig1.png" width="650px" alt="alt">
 
 #### Base Model Pre-training
 
-<img src="/images/incremental-detr/eq1.png" width="400px" alt="alt">
+<img src="/images/incremental-DETR/eq1.png" width="400px" alt="alt">
 
-<img src="/images/incremental-detr/eq2.png" width="400px" alt="alt">
+<img src="/images/incremental-DETR/eq2.png" width="400px" alt="alt">
 
-<img src="/images/incremental-detr/eq3.png" width="400px" alt="alt">
+<img src="/images/incremental-DETR/eq3.png" width="400px" alt="alt">
 
 base class 에 대해서 일반적인 DETR 학습 방법으로 학습
 
 #### Base Model Fine-tuning
 
-<img src="/images/incremental-detr/proposal.png" width="400px" alt="alt">
+<img src="/images/incremental-DETR/proposal.png" width="400px" alt="alt">
 
 Selective Search 으로 base class GT 와 안겹치는 부분에서 object proposal <br>
 class 는 $n+1$ 로 지정
 
-<img src="/images/incremental-detr/eq4.png" width="500px" alt="alt">
+<img src="/images/incremental-DETR/eq4.png" width="500px" alt="alt">
 
 Selective Search 에 의해서 proposal 된 box 에 대해서 학습
 
-<img src="/images/incremental-detr/eq5.png" width="400px" alt="alt">
+<img src="/images/incremental-DETR/eq5.png" width="400px" alt="alt">
 
 일반 base class 에 대한 GT 에 대한 Loss + Selective Search 로 얻어진 GT 에 대한 Loss
 
 
 ### Incremental Few-shot Fine-Tuning
 
-<!-- <img src="/images/incremental-detr/fig2.png" width="650px" alt="alt"> -->
+<img src="/images/incremental-DETR/fig2.png" width="650px" alt="alt">
 
 Base class 에 대해서 학습된 weights 를 initialize 로 사용 <br>
 Projection Layer 와 Classification Head 만 학습 <br>
 Classification Head 는 base class number + novel class number 로 새로 구성? (base class 에 대한 head weight 만 load?)
 
-<img src="/images/incremental-detr/eq6.png" width="500px" alt="alt">
+<img src="/images/incremental-DETR/eq6.png" width="500px" alt="alt">
 
 base class 에 대한 정보를 forgetting 하는 문제를 방지하기 위해서 <br>
 novel class GT box를 제외한 구역에 대해서 distillation
 
-<img src="/images/incremental-detr/eq7.png" width="450px" alt="alt">
+<img src="/images/incremental-DETR/eq7.png" width="450px" alt="alt">
 
 base class logit 에 대해서도 distillation
 
-<img src="/images/incremental-detr/eq8.png" width="450px" alt="alt">
+<img src="/images/incremental-DETR/eq8.png" width="450px" alt="alt">
 
 novel class 에 대한 DETR 학습 + Feautre distillation loss + Logit distillation loss
 
 ## Experimental Results
 
-<!-- <img src="/images/incremental-detr/tab1.png" width="650px" alt="alt"> -->
+<img src="/images/incremental-DETR/tab1.png" width="650px" alt="alt">
 
 "1-41" : base class <br>
 "41" : novel class <br>
@@ -99,6 +99,6 @@ novel class 에 대한 DETR 학습 + Feautre distillation loss + Logit distillat
 "(1-40) + (41-80)" : "1-40" 를 base class, "41-80" 을 novel class로 제안하는 방법을 학습
 
 
-<!-- <img src="/images/incremental-detr/tab2.png" width="650px" alt="alt"> -->
+<img src="/images/incremental-DETR/tab2.png" width="650px" alt="alt">
 
 class 마다의 이미지 샘플 수에 따른 Incremental few-shot object detection 실험 결과
