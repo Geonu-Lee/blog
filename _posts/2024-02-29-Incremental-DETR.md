@@ -1,6 +1,6 @@
 ---
 title: "Incremental-DETR: Incremental Few-Shot Object Detection via Self-Supervised Learning"
-date: 2024-03-03 23:00:00 +09:00
+date: 2024-02-29 23:00:00 +09:00
 categories: [Paper Reading]
 tags:
    [
