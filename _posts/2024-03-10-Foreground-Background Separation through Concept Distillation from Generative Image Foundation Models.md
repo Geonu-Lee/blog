@@ -1,6 +1,6 @@
 ---
 title: "Foreground-Background Separation through Concept Distillation from Generative Image Foundation Models"
-date: 2024-03-11 18:00:00 +09:00
+date: 2024-03-12 18:00:00 +09:00
 categories: [Paper Reading]
 tags:
    [
