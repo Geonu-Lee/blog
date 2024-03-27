@@ -1,5 +1,5 @@
 ---
-title: "Translating Labels to Solve Annotation Mismatches Across Object Detection Datasets"
+title: "Transferring Labels to Solve Annotation Mismatches Across Object Detection Datasets"
 date: 2024-03-27 14:00:00 +09:00
 categories: [Paper Reading]
 tags:
@@ -10,7 +10,7 @@ tags:
 use_math: true
 ---
 
-# Translating Labels to Solve Annotation Mismatches Across Object Detection Datasets
+# Transferring Labels to Solve Annotation Mismatches Across Object Detection Datasets
 [ICLR 2024](https://openreview.net/forum?id=ChHx5ORqF0), 2024-03-27 기준 0회 인용
 
 ## Task
