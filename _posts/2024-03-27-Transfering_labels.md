@@ -77,7 +77,7 @@ source datasets 을 통해서 RPN 이 source-like proposals 을 하도록 학습
 실제 target image label 정보를 기반으로 ROI Extractor 로 얻어지는 것과 source-like porposals 을 기반으로 ROI Extractor 로 얻어지는 것을 Transfer Head 의 입력으로 활용 <br>
 -> source-like proposals 이 실제 target label 로 이동할 수 있도록 Transfer Head 가 학습
 
-> Assigning these random class labels to each proposal in training ensures that ftrans learns to correctly determine whether the region should be labeled 
+> Assigning these random class labels to each proposal in training ensures that $f_{trans}$ learns to correctly determine whether the region should be labeled 
 
 class label 을 random selelct 하여 box feature 에 concatenate 한 후 Transfer Head 로 입력 <br>
 -> 어떠한 방식으로 class label 을 random select 하는지 명확한 설명을 찾지 못함
