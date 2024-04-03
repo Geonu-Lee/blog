@@ -1,6 +1,6 @@
 ---
 title: "Sparse R-CNN: End-to-End Object Detection with Learnable Proposals"
-date: 2024-04-03 11:00:00 +09:00
+date: 2024-04-03 10:00:00 +09:00
 categories: [Paper Reading]
 tags:
    [
