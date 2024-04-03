@@ -9,7 +9,7 @@ tags:
 use_math: true
 ---
 
-# DETRs with Collaborative Hybrid Assignments Training
+# Sparse R-CNN: End-to-End Object Detection with Learnable Proposals
 [CVPR 2021](https://openaccess.thecvf.com/content/CVPR2021/html/Sun_Sparse_R-CNN_End-to-End_Object_Detection_With_Learnable_Proposals_CVPR_2021_paper.html)
 , 2024-04-03 기준 973회 인용
 
