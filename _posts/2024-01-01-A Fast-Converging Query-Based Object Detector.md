@@ -22,8 +22,8 @@ use_math: true
 - Each query adaptively samples features over space and scales based on estimated offset
 - Dynamically decode these sampled features with an adaptive MLP-Mixer
   
-![Alt text](/assets/paper_imgs/adamixer/teaser.PNG)
-<!-- <img src="/images/adamixer/teaser.PNG" height="300px" alt="teaser"> -->
+<!-- ![image](https://github.com/Geonu-Lee/Geonu-Lee.github.io/assets/99609743/2fa92f5a-6b69-480e-9754-ff962dc246a0) -->
+<img src="https://github.com/Geonu-Lee/Geonu-Lee.github.io/assets/99609743/2fa92f5a-6b69-480e-9754-ff962dc246a0" height="300px" alt="teaser">
 
 본 논문에서 제안한는 방법인 AdaMixer가 기존의 방법들보다 더 빠르게 학습되고 성능이 좋은 것을 보여준다
 
