@@ -27,7 +27,7 @@ timezone: Asia/Seoul
 
 title: Geonu's blog # the main title
 
-tagline: AI Researcher # it will display as the sub-title
+tagline: AI Engineer # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
