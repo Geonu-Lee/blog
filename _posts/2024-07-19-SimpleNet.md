@@ -1,6 +1,6 @@
 ---
 title: "SimpleNet: A Simple Network for Image Anomaly Detection and Localization"
-date: 2024-07-19 20:00:00 +09:00
+date: 2024-07-19 17:00:00 +09:00
 categories: [Paper Reading]
 tags:
    [
