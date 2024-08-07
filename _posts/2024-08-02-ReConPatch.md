@@ -10,7 +10,7 @@ use_math: true
 ---   
 # ReConPatch: Contrastive Patch Representation Learning for Industrial Anomaly Detection
 
-[CVPR 2024](https://openaccess.thecvf.com/content/WACV2024/html/Hyun_ReConPatch_Contrastive_Patch_Representation_Learning_for_Industrial_Anomaly_Detection_WACV_2024_paper.html), 2024-08-02 기준 27회 인용
+[WACV 2024](https://openaccess.thecvf.com/content/WACV2024/html/Hyun_ReConPatch_Contrastive_Patch_Representation_Learning_for_Industrial_Anomaly_Detection_WACV_2024_paper.html), 2024-08-02 기준 27회 인용
 
 ## Task
 - Anomaly Detection
